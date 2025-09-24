@@ -1,8 +1,10 @@
 import os
 import re
 from typing import List, Dict, Any
+from dotenv import load_dotenv
 from mistralai import Mistral
 
+load_dotenv()
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
 if not MISTRAL_API_KEY:
     raise ValueError("MISTRAL_API_KEY environment variable is required")

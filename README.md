@@ -1,34 +1,32 @@
 # RAG Knowledge Hub
 
-Enterprise-grade document intelligence with adaptive search and reliable AI-generated responses.
-
-## Overview
-
 RAG Knowledge Hub is a sophisticated Retrieval-Augmented Generation (RAG) system that enables intelligent document analysis and question-answering. Built with FastAPI and Mistral AI, it provides enterprise-grade document intelligence with customizable search parameters, intent detection, and evidence-based responses.
+
+<p align="center">
+<img width="800" height="777" alt="截圖 2025-09-24 凌晨1 12 46" src="https://github.com/user-attachments/assets/9070ba55-5b55-46c1-9fcd-7e65e096dea2" />
+</p>
 
 ## System Architecture
 
 ```
 
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│ Frontend UI │ │ FastAPI App │ │ Services │
-│ │ │ │ │ │
-│ • Chat Interface│◄──►│ • Routes │◄──►│ • Text Extract │
-│ • File Upload │ │ • Models │ │ • Intent Detect │
-│ • Parameters │ │ • Validation │ │ • Search Engine │
-│ • Markdown UI │ │ │ │ • LLM Service │
-└─────────────────┘ └─────────────────┘ │ • Security │
-└─────────────────┘
-│
-▼
-┌─────────────────┐
-│ Knowledge │
-│ Base │
-│ │
-│ • JSON Storage │
-│ • Embeddings │
-│ • Metadata │
-└─────────────────┘
+                         ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+                         │ Frontend UI     │    │ FastAPI App     │    │ Services        │
+                         │                 │    │                 │    │ • Text Extract  │
+                         │ • Chat Interface│◄──►│ • Routes        │◄──►│ • Intent Detect │
+                         │ • File Upload   │    │ • Models        │    │ • Search Engine │
+                         │ • Parameters    │    │ • Validation    │    │ • LLM Service   │
+                         │ • Markdown UI   │    │                 │    │ • Security      │
+                         └─────────────────┘    └─────────────────┘    └─────────────────┘    
+                                                        │               
+                                                        ▼
+                                                ┌─────────────────┐
+                                                │ Knowledge Base  │
+                                                │                 │
+                                                │ • JSON Storage  │
+                                                │ • Embeddings    │
+                                                │ • Metadata      │
+                                                └─────────────────┘
 
 ```
 
@@ -72,18 +70,18 @@ User Query → Intent Detection → Search → Context → LLM → Response
 ```
 
 RAG_Knowledge_Hub/
-├── app.py # Main FastAPI application
-├── models.py # Pydantic data models
-├── utils.py # Utility functions
-├── requirements.txt # Python dependencies
-├── .env.example # Environment variables template
-├── README.md # This file
-└── services/ # Service modules
-├── text_extraction.py # PDF processing
-├── intent_detection.py # Query intent classification
-├── search_service.py # Hybrid search logic
-├── llm_service.py # LLM interactions
-└── security_service.py # Security and validation
+├── app.py                  # Main FastAPI application (routes, endpoints)
+├── models.py          
+├── utils.py           
+├── requirements.txt   
+├── .env.example               
+├── services/           
+│   ├── text_extraction.py   # PDF text + OCR extraction
+│   ├── intent_detection.py  # Query intent classification
+│   ├── search_service.py    # Hybrid semantic + keyword search
+│   ├── llm_service.py       # LLM interactions (Mistral API)
+│   ├── security_service.py  # Security checks and validation
+└── README.md 
 
 ```
 

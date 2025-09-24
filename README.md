@@ -10,23 +10,23 @@ RAG Knowledge Hub is a sophisticated Retrieval-Augmented Generation (RAG) system
 
 ```
 
-                   ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-                   │ Frontend UI     │    │ FastAPI App     │    │ Services        │
-                   │                 │    │                 │    │ • Text Extract  │
-                   │ • Chat Interface│◄──►│ • Routes        │◄──►│ • Intent Detect │
-                   │ • File Upload   │    │ • Models        │    │ • Search Engine │
-                   │ • Parameters    │    │ • Validation    │    │ • LLM Service   │
-                   │ • Markdown UI   │    │                 │    │ • Security      │
-                   └─────────────────┘    └─────────────────┘    └─────────────────┘    
-                                                  │               
-                                                  ▼
-                                          ┌─────────────────┐
-                                          │ Knowledge Base  │
-                                          │                 │
-                                          │ • JSON Storage  │
-                                          │ • Embeddings    │
-                                          │ • Metadata      │
-                                          └─────────────────┘
+                 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+                 │ Frontend UI     │    │ FastAPI App     │    │ Services        │
+                 │                 │    │                 │    │ • Text Extract  │
+                 │ • Chat Interface│◄──►│ • Routes        │◄──►│ • Intent Detect │
+                 │ • File Upload   │    │ • Models        │    │ • Search Engine │
+                 │ • Parameters    │    │ • Validation    │    │ • LLM Service   │
+                 │ • Markdown UI   │    │                 │    │ • Security      │
+                 └─────────────────┘    └─────────────────┘    └─────────────────┘    
+                                                │               
+                                                ▼
+                                        ┌─────────────────┐
+                                        │ Knowledge Base  │
+                                        │                 │
+                                        │ • JSON Storage  │
+                                        │ • Embeddings    │
+                                        │ • Metadata      │
+                                        └─────────────────┘
 
 ```
 

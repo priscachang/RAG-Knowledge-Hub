@@ -121,7 +121,7 @@ RAG_Knowledge_Hub/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/rag-knowledge-hub.git
+git clone https://github.com/yourusername/RAG-Knowledge-Hub.git
 cd rag-knowledge-hub
 ```
 

@@ -3,7 +3,7 @@
 RAG Knowledge Hub is a sophisticated Retrieval-Augmented Generation (RAG) system that enables intelligent document analysis and question-answering. Built with FastAPI and Mistral AI, it provides enterprise-grade document intelligence with customizable search parameters, intent detection, and evidence-based responses.
 
 <p align="center">
-<img width="800" height="777" alt="截圖 2025-09-24 凌晨1 12 46" src="https://github.com/user-attachments/assets/9070ba55-5b55-46c1-9fcd-7e65e096dea2" />
+  <img width="800" height="787" alt="截圖 2025-09-24 凌晨1 38 58" src="https://github.com/user-attachments/assets/7d50b4a5-3338-44e0-9138-760ad1c537ca" />
 </p>
 
 ## System Architecture
